@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main() {
+    int i,n=0;
+    char arr[20];
+printf("enter  string:");
+gets(arr);
+for(i=0;i<20; i++)
+    {
+        if(arr[i]=='\0')
+       break;
+      n++; 
+     }
+    printf("%d\n the reverse of string \t",n);
+    for(i=n-1;i>=0;i--)
+    {
+     printf("%c",arr[i]);   
+    }
+}
